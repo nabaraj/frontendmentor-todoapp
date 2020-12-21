@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { Fragment } from 'react';
 import CustomCheckBox from '../customCheckbox/CustomCheckBox';
 import { sortableContainer, sortableElement } from 'react-sortable-hoc';
 import cross from './../../images/icon-cross.svg';
+import './style.scss';
 
 function ListItem({ item, checkEvent, itemIndex, removeItem }) {
   const changeEvent = function (e) {
@@ -41,6 +42,7 @@ const TodoLists = ({ filteredList, todoLists, actionTodo, removeItem, filterList
     filterList(type);
   }
   return (
+    <Fragment>
     <SortableContainer onSortEnd={onSortEnd} 
    
     distance={1}>
@@ -57,7 +59,7 @@ const TodoLists = ({ filteredList, todoLists, actionTodo, removeItem, filterList
       }
       <li className="list-group-item d-flex justify-content-between">
         <div>{countComplete()}</div>
-        <ul className="list-inline d-flex justify-content-between">
+        <ul className="list-inline justify-content-between d-none d-sm-flex">
           {statusArray.map((item) => (
             <li
               onClick={(e) => changeFilter(item)}
@@ -71,6 +73,16 @@ const TodoLists = ({ filteredList, todoLists, actionTodo, removeItem, filterList
           className="footerList">Clear Completed</div>
       </li>
     </SortableContainer>
+        <ul className="list-inline d-flex justify-content-center mobile-filter py-3 my-4 d-sm-none">
+          {statusArray.map((item) => (
+            <li
+              onClick={(e) => changeFilter(item)}
+              className={`px-1 mx-2 text-capitalize footerList ${activeFilter === item ? 'active' : ''}`}
+              key={item}>
+              {item}
+            </li>))}
+        </ul>
+    </Fragment>
   );
 }
 
