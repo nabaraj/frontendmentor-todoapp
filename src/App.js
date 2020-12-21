@@ -98,12 +98,12 @@ function App() {
   return (
     <div className={`app`} >
       <div className='container pt-5'>
-        <div className="d-flex pb-2">
+        <div className="d-flex pb-4 pt-5">
           <h3 className='text-white'>TODO</h3>
           <div className="ml-auto pt-1">
             <img 
               className="themeSwitch" 
-              onClick={(e) => changeTheme(theme)} src={theme === 'dark' ? moon : sun} 
+              onClick={(e) => changeTheme(theme)} src={theme === 'dark' ? sun : moon} 
               alt="" 
             />
           </div>

@@ -30,7 +30,7 @@ const CreateList= ({createListItem})=> {
     setToDoItem(initialTodoItem)
   }
   return (
-    <div className="input-group createList align-items-center mb-3">
+    <div className="input-group createList align-items-center mb-4">
       <div className="input-group-prepend pl-4">
         <CustomCheckBox 
           name="createChecked"
