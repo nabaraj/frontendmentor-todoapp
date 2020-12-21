@@ -98,8 +98,8 @@ function App() {
   return (
     <div className={`app`} >
       <div className='container pt-5'>
-        <div className="d-flex pb-4 pt-5">
-          <h3 className='text-white'>TODO</h3>
+        <div className="d-flex pb-4 pt-4">
+          <h1 className='text-white'>TODO</h1>
           <div className="ml-auto pt-1">
             <img 
               className="themeSwitch" 

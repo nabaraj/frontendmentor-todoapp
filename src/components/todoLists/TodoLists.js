@@ -15,7 +15,7 @@ function ListItem({ item, checkEvent, itemIndex, removeItem }) {
     }
     checkEvent(currentItem);
   }
-  return (<li className="list-group-item d-flex align-items-center pl-4">
+  return (<li className="list-group-item d-flex align-items-center pl-4 py-4">
     <CustomCheckBox
       name={`${itemIndex}-todoList`}
       labelText={item.content}
@@ -29,7 +29,7 @@ function ListItem({ item, checkEvent, itemIndex, removeItem }) {
 }
 const SortableItem = sortableElement(ListItem);
 const SortableContainer = sortableContainer(({ children }) => {
-  return <ul className="todoListUl list-group">{children}</ul>;
+  return <ul className="todoListUl list-group shadow">{children}</ul>;
 });
 
 const TodoLists = ({ filteredList, todoLists, actionTodo, removeItem, filterList, statusArray, activeFilter, clearCompleted, onSortEnd }) => {

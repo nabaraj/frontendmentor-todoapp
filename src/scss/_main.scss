@@ -1,7 +1,7 @@
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 $color-scheme: (
-    (light,  #464459, #fff, './../images/bg-desktop-light.jpg','./../images/bg-mobile-light.jpg', #ffffff, #424147,hsl(236, 9%, 61%), hsl(235, 19%, 35%), hsl(220, 98%, 61%)),
+    (light,  #464459, #fafafa, './../images/bg-desktop-light.jpg','./../images/bg-mobile-light.jpg', #ffffff, #424147,hsl(236, 9%, 61%), hsl(235, 19%, 35%), hsl(220, 98%, 61%)),
     (dark,  #c8cae3, #181824, './../images/bg-desktop-dark.jpg','./../images/bg-mobile-dark.jpg', #25273c, #d1d3ea, hsl(233, 14%, 35%), hsl(234, 39%, 85%), hsl(220, 98%, 61%))
 );
 @mixin theme($name,  $color, $bodyBgColor, $wrapperImage, $mobileImage, $backgroundColor, $content, $grayishBlue, $hoverLink, $primary) {  
