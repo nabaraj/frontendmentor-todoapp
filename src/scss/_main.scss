@@ -16,7 +16,9 @@ $color-scheme: (
           background-color: $backgroundColor;
           color: $content;
       }
-
+      .footerText{
+        color: $content
+      }
       .footerList{
         color:$grayishBlue;
         cursor: pointer;

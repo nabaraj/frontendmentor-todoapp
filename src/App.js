@@ -120,6 +120,7 @@ function App() {
           clearCompleted = {clearCompleted}
           onSortEnd = {onSortEnd}
         />
+        <h3 className='text-center mt-3 footerText' style={{fontSize:'14px'}}>Drag and drop to reorder list</h3>
       </div>
     </div>
   );
