@@ -29,7 +29,7 @@ function ListItem({ item, checkEvent, itemIndex, removeItem }) {
 }
 const SortableItem = sortableElement(ListItem);
 const SortableContainer = sortableContainer(({ children }) => {
-  return <ul className="todoListUl list-group shadow">{children}</ul>;
+  return <ul className="todoListUl list-group shadow-lg">{children}</ul>;
 });
 
 const TodoLists = ({ filteredList, todoLists, actionTodo, removeItem, filterList, statusArray, activeFilter, clearCompleted, onSortEnd }) => {
